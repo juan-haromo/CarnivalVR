@@ -3,7 +3,12 @@ guid: d0e40c355a451114da409ba18b6816ad
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_Circus
+    second: {fileID: 2100000, guid: 8e617a0e7dbf27c4d86752a2dbb4d602, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
