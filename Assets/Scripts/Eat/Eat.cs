@@ -6,7 +6,7 @@ public class Eat : MonoBehaviour
     {
         if(other.TryGetComponent<IEatable>(out IEatable eatable))
         {
-            eatable.Eat();
+            eatable.Eat(transform);
         }
     }
 }
