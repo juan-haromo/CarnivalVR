@@ -4,7 +4,7 @@ public class EatIceCream : MonoBehaviour, IEatable
 {
     [SerializeField] IceCreamGameManager manager;
     public bool canBeAten;
-    public void Eat()
+    public void Eat(Transform eater)
     {
         if(!canBeAten){return;}
         canBeAten = false;

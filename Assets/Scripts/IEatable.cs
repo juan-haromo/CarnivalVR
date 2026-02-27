@@ -1,4 +1,6 @@
+using UnityEngine;
+
 public interface IEatable
 {
-    public void Eat();
+    public void Eat(Transform eater);
 }
