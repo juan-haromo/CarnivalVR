@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: R_Ring
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Msh_RightHand
+    m_Weight: 0
+  - m_Path: Rig_RightHand
+    m_Weight: 0
+  - m_Path: Rig_RightHand/BN_Hand_R.001
+    m_Weight: 0
+  - m_Path: Rig_RightHand/BN_Hand_R.001/BN_Index_R.003
+    m_Weight: 0
+  - m_Path: Rig_RightHand/BN_Hand_R.001/BN_Index_R.003/BN_Index_R.004
+    m_Weight: 0
+  - m_Path: Rig_RightHand/BN_Hand_R.001/BN_Index_R.003/BN_Index_R.004/BN_Index_R.005
+    m_Weight: 0
+  - m_Path: Rig_RightHand/BN_Hand_R.001/BN_Index_R.003/BN_Index_R.004/BN_Index_R.005/BN_Index_R.002_end.001
+    m_Weight: 0
+  - m_Path: Rig_RightHand/BN_Hand_R.001/BN_Midle_R.003
+    m_Weight: 0
+  - m_Path: Rig_RightHand/BN_Hand_R.001/BN_Midle_R.003/BN_Midle_R.004
+    m_Weight: 0
+  - m_Path: Rig_RightHand/BN_Hand_R.001/BN_Midle_R.003/BN_Midle_R.004/BN_Midle_R.005
+    m_Weight: 0
+  - m_Path: Rig_RightHand/BN_Hand_R.001/BN_Midle_R.003/BN_Midle_R.004/BN_Midle_R.005/BN_Midle_R.002_end.001
+    m_Weight: 0
+  - m_Path: Rig_RightHand/BN_Hand_R.001/BN_Pinky_R.003
+    m_Weight: 0
+  - m_Path: Rig_RightHand/BN_Hand_R.001/BN_Pinky_R.003/BN_Pinky_R.004
+    m_Weight: 0
+  - m_Path: Rig_RightHand/BN_Hand_R.001/BN_Pinky_R.003/BN_Pinky_R.004/BN_Pinky_R.005
+    m_Weight: 0
+  - m_Path: Rig_RightHand/BN_Hand_R.001/BN_Pinky_R.003/BN_Pinky_R.004/BN_Pinky_R.005/BN_Pinky_R.002_end.001
+    m_Weight: 0
+  - m_Path: Rig_RightHand/BN_Hand_R.001/BN_Ring_R.003
+    m_Weight: 1
+  - m_Path: Rig_RightHand/BN_Hand_R.001/BN_Ring_R.003/BN_Ring_R.004
+    m_Weight: 1
+  - m_Path: Rig_RightHand/BN_Hand_R.001/BN_Ring_R.003/BN_Ring_R.004/BN_Ring_R.005
+    m_Weight: 1
+  - m_Path: Rig_RightHand/BN_Hand_R.001/BN_Ring_R.003/BN_Ring_R.004/BN_Ring_R.005/BN_Ring_R.002_end.001
+    m_Weight: 1
+  - m_Path: Rig_RightHand/BN_Hand_R.001/BN_Thumb_R.002
+    m_Weight: 0
+  - m_Path: Rig_RightHand/BN_Hand_R.001/BN_Thumb_R.002/BN_Thumb_R.003
+    m_Weight: 0
+  - m_Path: Rig_RightHand/BN_Hand_R.001/BN_Thumb_R.002/BN_Thumb_R.003/BN_Thumb_R.001_end.001
+    m_Weight: 0
