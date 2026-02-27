@@ -4918,6 +4918,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 383776198619983863, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2005550602373036113, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.264
@@ -4929,6 +4933,10 @@ PrefabInstance:
     - target: {fileID: 2005550602373036113, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.372
+      objectReference: {fileID: 0}
+    - target: {fileID: 2280908699938411076, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2360096811255073953, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4970,9 +4978,25 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: -506687716846883365, guid: 6a05fefa768413542be169d2d170e3b4, type: 3}
+    - target: {fileID: 4989882867501118303, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014015052147065485, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5480297869229733006, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5514033927684111220, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
       propertyPath: m_Name
       value: CornStand
+      objectReference: {fileID: 0}
+    - target: {fileID: 5514033927684111220, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5653267313450183141, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13074,6 +13098,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 383776198619983863, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2005550602373036113, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.816
@@ -13081,6 +13109,10 @@ PrefabInstance:
     - target: {fileID: 2005550602373036113, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 2280908699938411076, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2360096811255073953, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13094,9 +13126,25 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: -7623616230884498517, guid: d1fa7d80dfece6b47ba928ec90e2ddfe, type: 3}
+    - target: {fileID: 4989882867501118303, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014015052147065485, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5480297869229733006, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5514033927684111220, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
       propertyPath: m_Name
       value: CornDogStand
+      objectReference: {fileID: 0}
+    - target: {fileID: 5514033927684111220, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5653267313450183141, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
       propertyPath: m_LocalRotation.w
@@ -24922,7 +24970,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7437877333280800768, guid: 7f41f30f24e37e046b61fdb8c98d1bbb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -47612,7 +47660,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4217014792792047636, guid: f53c670745279b842a1ac40fe85002dd, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -49483,6 +49531,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 383776198619983863, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2005550602373036113, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.442
@@ -49490,6 +49542,10 @@ PrefabInstance:
     - target: {fileID: 2005550602373036113, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.236
+      objectReference: {fileID: 0}
+    - target: {fileID: 2280908699938411076, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2360096811255073953, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
       propertyPath: m_LocalPosition.x
@@ -49503,9 +49559,25 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1933216661788441028, guid: 1a955b12e7626c749b8d50d9dda29428, type: 3}
+    - target: {fileID: 4989882867501118303, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014015052147065485, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5480297869229733006, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5514033927684111220, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
       propertyPath: m_Name
       value: SpiropapaStand
+      objectReference: {fileID: 0}
+    - target: {fileID: 5514033927684111220, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7328641512039497015, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53324,9 +53396,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 383776198619983863, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2280908699938411076, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4989882867501118303, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014015052147065485, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5480297869229733006, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5514033927684111220, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
       propertyPath: m_Name
       value: IceCreamStand
+      objectReference: {fileID: 0}
+    - target: {fileID: 5514033927684111220, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7993690497404096617, guid: e8afccc423af4174ebb2fe47c23eeb86, type: 3}
       propertyPath: m_LocalPosition.x
