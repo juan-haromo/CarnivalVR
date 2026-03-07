@@ -69,6 +69,7 @@ MonoBehaviour:
   maxHealth: 1
   shootingGame: {fileID: 0}
   breakSound: {fileID: 8694349563741489441}
+  mesh: {fileID: 5726591477967918778}
 --- !u!1 &5242186625683340944
 GameObject:
   m_ObjectHideFlags: 0
