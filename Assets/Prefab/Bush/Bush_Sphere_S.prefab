@@ -50,7 +50,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d6a1ffbe11e5bc242837f54341c0ceef, type: 3}
       propertyPath: m_Name
-      value: Msh_Bush_Sphere_S
+      value: Bush_Sphere_S
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d6a1ffbe11e5bc242837f54341c0ceef, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
