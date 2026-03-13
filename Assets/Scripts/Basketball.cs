@@ -21,6 +21,7 @@ public class Basketball : MonoBehaviour
     void Awake()
     {
         highScore = PlayerPrefs.GetInt(HIGH_SCORE_KEY,0);
+        lblHighScore.text = highScore.ToString("D2");
         score = 0;
         EndGame();
     }
