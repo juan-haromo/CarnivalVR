@@ -103,7 +103,7 @@ public class ShootingGame : MonoBehaviour
     public void ResetGun()
     {
         gun.gameObject.SetActive(false);
-        gun.transform.position = gunStartPoint.position;
+        gun.transform.SetPositionAndRotation(gunStartPoint.position,gunStartPoint.rotation);
         gun.linearVelocity = Vector3.zero;
         gun.angularVelocity = Vector3.zero;
     }
