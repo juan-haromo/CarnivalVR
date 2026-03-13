@@ -8973,7 +8973,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: best
+  m_text: Mejor
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7dc0a6981e8524f4086d3287c92ed3c8, type: 2}
   m_sharedMaterial: {fileID: 6476319954315683226, guid: 7dc0a6981e8524f4086d3287c92ed3c8, type: 2}
@@ -9039,7 +9039,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0.7268295}
+  m_margin: {x: -0.06983349, y: 0, z: -0.06486839, w: 0.7268295}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -15501,6 +15501,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 215763748032223269, guid: 3a4e48290099f7b4e8e139331eef13b0, type: 3}
+      propertyPath: m_text
+      value: ya
+      objectReference: {fileID: 0}
     - target: {fileID: 6144134703111852427, guid: 3a4e48290099f7b4e8e139331eef13b0, type: 3}
       propertyPath: m_Name
       value: StickCatchGame
@@ -21894,7 +21898,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: YOU
+  m_text: tu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7dc0a6981e8524f4086d3287c92ed3c8, type: 2}
   m_sharedMaterial: {fileID: 6476319954315683226, guid: 7dc0a6981e8524f4086d3287c92ed3c8, type: 2}
@@ -38225,7 +38229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1509705585191994498, guid: cc25d41a93cca6f42b9453afdefdc53a, type: 3}
       propertyPath: m_text
-      value: YOU
+      value: TU
       objectReference: {fileID: 0}
     - target: {fileID: 1509705585191994498, guid: cc25d41a93cca6f42b9453afdefdc53a, type: 3}
       propertyPath: m_fontColor.b
@@ -50607,7 +50611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6798959376359610884, guid: 9b2d76fca1e88d446b21f15d6d72d8bd, type: 3}
       propertyPath: m_text
-      value: BEST
+      value: mejor
       objectReference: {fileID: 0}
     - target: {fileID: 6798959376359610884, guid: 9b2d76fca1e88d446b21f15d6d72d8bd, type: 3}
       propertyPath: m_fontColor.b
@@ -51981,6 +51985,10 @@ PrefabInstance:
       value: 4287872565
       objectReference: {fileID: 0}
     - target: {fileID: 1509705585191994498, guid: cc25d41a93cca6f42b9453afdefdc53a, type: 3}
+      propertyPath: m_text
+      value: mejor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1509705585191994498, guid: cc25d41a93cca6f42b9453afdefdc53a, type: 3}
       propertyPath: m_fontColor.b
       value: 0.5745674
       objectReference: {fileID: 0}
@@ -53096,6 +53104,10 @@ PrefabInstance:
     - target: {fileID: 6691006799748995074, guid: 9b2d76fca1e88d446b21f15d6d72d8bd, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4287872565
+      objectReference: {fileID: 0}
+    - target: {fileID: 6798959376359610884, guid: 9b2d76fca1e88d446b21f15d6d72d8bd, type: 3}
+      propertyPath: m_text
+      value: tu
       objectReference: {fileID: 0}
     - target: {fileID: 6798959376359610884, guid: 9b2d76fca1e88d446b21f15d6d72d8bd, type: 3}
       propertyPath: m_fontColor.b

@@ -46,7 +46,7 @@ public class CatchStickGame : MonoBehaviour
             countDownText.text = i.ToString("D2");
             yield return new WaitForSeconds(1);
         }
-        countDownText.text = "GO";
+        countDownText.text = "YA";
         while (0 < remaining.Count)
         {
             yield return new WaitForSeconds(Random.Range(1.0f,1.5f));
