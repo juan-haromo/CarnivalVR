@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShootingGame : MonoBehaviour
 {
     [SerializeField] List<Transform> targets;
+    List<IShootingTarget> shootingTargets;
     bool isReady;
     bool isPlaying;
     [SerializeField] Animator courtainAnimator;
@@ -19,10 +20,22 @@ public class ShootingGame : MonoBehaviour
     void Start()
     {
         ResetGun();
+        GetTargets();
         TurnOffTargets();
         InitializeScore();
     }
 
+    private void GetTargets()
+    {
+        shootingTargets = new List<IShootingTarget>();
+        foreach (Transform t in targets)
+        {
+            if (t.gameObject.TryGetComponent<IShootingTarget>(out IShootingTarget target))
+            {
+                shootingTargets.Add(target);
+            }
+        }
+    }
 
     public void StartGame()
     {
@@ -46,13 +59,13 @@ public class ShootingGame : MonoBehaviour
             //5t    10t  20t
             //10s   15s  20s
             //Copy to manipulate non-selected targets
-            List<Transform> inactiveTargets = new List<Transform>(targets);
+            List<IShootingTarget> inactiveTargets = new List<IShootingTarget>(shootingTargets);
             int totalTargets = round == 3? 20 : round * 5;
             //Activate small targets
             for (int i = 0; i < totalTargets; i++)
             {
                 int index = Random.Range(0, inactiveTargets.Count);
-                inactiveTargets[index].gameObject.SetActive(true);
+                inactiveTargets[index].Activate();
                 inactiveTargets.RemoveAt(index);
             }
             
@@ -81,9 +94,9 @@ public class ShootingGame : MonoBehaviour
 
     private void TurnOffTargets()
     {
-        foreach (Transform t in targets)
+        foreach (IShootingTarget t in shootingTargets)
         {
-            t.gameObject.SetActive(false);
+            t.Deactivate();
         }
     }
     

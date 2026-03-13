@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large_Tent_Red
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9de27711b736a1d40bd4b0e2585f62da, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

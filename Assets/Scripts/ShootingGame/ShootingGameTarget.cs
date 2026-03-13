@@ -1,28 +1,38 @@
 using UnityEngine;
 
-public class ShootingGameTarget : MonoBehaviour, IDamagable
+public class ShootingGameTarget : MonoBehaviour, IDamagable, IShootingTarget
 {
     [SerializeField] float maxHealth;
+    float currentHealth;
     [SerializeField] ShootingGame shootingGame;
     [SerializeField] SoundPlayer breakSound;
-    float currentHealth;
-    [SerializeField] Transform mesh;
- 
+    [SerializeField] MeshRenderer mesh;
+    [SerializeField] Collider col;
+
+   
+
     public void Damage(float amount)
     {
         currentHealth -= Mathf.Abs(amount);
         if(currentHealth <= 0)
         {
-            gameObject.SetActive(false);
-            mesh.gameObject.SetActive(false);
             shootingGame.HitTarget();
             breakSound.PlaySound();
+            Deactivate();
         }
+    } 
+    
+    public void Activate()
+    {
+        col.enabled = true;
+        mesh.enabled = true;
+        currentHealth = maxHealth;
     }
 
-    void OnEnable()
+
+    public void Deactivate()
     {
-        mesh.gameObject.SetActive(true);
-        currentHealth = maxHealth;
+        col.enabled = false;
+        mesh.enabled = false;
     }
 }
