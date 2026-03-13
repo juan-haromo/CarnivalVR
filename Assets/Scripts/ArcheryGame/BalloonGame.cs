@@ -24,12 +24,13 @@ public class BallonGame : MonoBehaviour
 
     public void TurnOnGame()
     {
-        if(isPlaying){return;}
-        totalBallons = 0;
+        bow.gameObject.SetActive(false);
         bow.linearVelocity = Vector3.zero;
         bow.angularVelocity = Vector3.zero;
         bow.transform.SetPositionAndRotation(bowStartPoint.position,bowStartPoint.rotation);
         bow.gameObject.SetActive(true);
+        if(isPlaying){return;}
+        totalBallons = 0;
         foreach(Balloon b in balloons)
         {
             b.TurnOn();
