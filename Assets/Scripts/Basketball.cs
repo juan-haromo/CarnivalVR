@@ -17,6 +17,7 @@ public class Basketball : MonoBehaviour
 
     public List<Transform> BallStartPoints;
     public List<Rigidbody> Balls;
+    [SerializeField] SoundPlayer scoreSound;
 
     void Awake()
     {
@@ -32,6 +33,7 @@ public class Basketball : MonoBehaviour
         if (other.CompareTag("Basketball"))
         {
             score++;
+            scoreSound.PlaySound();
             lblCurrentScore.text = score.ToString("D2");
         }
     }
