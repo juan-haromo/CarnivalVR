@@ -43,6 +43,7 @@ public class ShootingGame : MonoBehaviour
         StartCoroutine(GameRoutine());
     }
 
+    int remainingTargets;
     IEnumerator GameRoutine()
     {
         isPlaying = true;
@@ -61,6 +62,7 @@ public class ShootingGame : MonoBehaviour
             //Copy to manipulate non-selected targets
             List<IShootingTarget> inactiveTargets = new List<IShootingTarget>(shootingTargets);
             int totalTargets = round == 3? 20 : round * 5;
+            remainingTargets = totalTargets;
             //Activate small targets
             for (int i = 0; i < totalTargets; i++)
             {
@@ -76,7 +78,8 @@ public class ShootingGame : MonoBehaviour
             //Start game when courtains fully open
             yield return new WaitUntil(() => isReady);
             isReady = false;
-            yield return new WaitForSeconds(waitTime);
+            float nextTime = Time.time + waitTime;
+            yield return new WaitUntil(()=> nextTime < Time.time || remainingTargets <= 0);
             courtainAnimator.Play("Close");
             yield return new WaitUntil(() => isReady);
             isReady = false;
@@ -152,6 +155,7 @@ public class ShootingGame : MonoBehaviour
     {
         currentScore.targetsHit++;
         currentScoreUI.DisplayScore(currentScore);
+        remainingTargets--;
     }
 }
 
