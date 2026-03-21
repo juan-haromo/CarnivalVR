@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 8259271179607742481, guid: 3b76b95f68cfab04fb7a79de7b193732, type: 3}
     - target: {fileID: 5268517332483561853, guid: f90f10b5689e808428e515c6014d7f4b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.224001
+      value: 14.224
       objectReference: {fileID: 0}
     - target: {fileID: 5268517332483561853, guid: f90f10b5689e808428e515c6014d7f4b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5268517332483561853, guid: f90f10b5689e808428e515c6014d7f4b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 16.223001
+      value: 16.832
       objectReference: {fileID: 0}
     - target: {fileID: 5268517332483561853, guid: f90f10b5689e808428e515c6014d7f4b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -74,15 +74,15 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5775208325346187823, guid: f90f10b5689e808428e515c6014d7f4b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8366404615142898430}
+      addedObject: {fileID: 6971826339854408730}
   m_SourcePrefab: {fileID: 100100000, guid: f90f10b5689e808428e515c6014d7f4b, type: 3}
 --- !u!1 &1065769483837723455 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5775208325346187823, guid: f90f10b5689e808428e515c6014d7f4b, type: 3}
   m_PrefabInstance: {fileID: 6840957857986906384}
   m_PrefabAsset: {fileID: 0}
---- !u!136 &8366404615142898430
-CapsuleCollider:
+--- !u!65 &6971826339854408730
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -99,8 +99,6 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.050990105
-  m_Height: 0.39731216
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.13134849, z: -0.009238243}
+  serializedVersion: 3
+  m_Size: {x: 0.15, y: 0.38, z: 0.15}
+  m_Center: {x: 0, y: 0.14, z: 0}
