@@ -13,7 +13,7 @@ public class GrabableDisplay : MonoBehaviour
         if(grabInteractable != null)
         {
             grabInteractable.selectEntered.AddListener(Grab);   
-            grabInteractable.selectExited.AddListener(Release);
+            grabInteractable.lastSelectExited.AddListener(Release);
         }
         if(target == null)
         {
@@ -28,7 +28,7 @@ public class GrabableDisplay : MonoBehaviour
         if(grabInteractable != null)
         {
             grabInteractable.selectEntered.RemoveListener(Grab);   
-            grabInteractable.selectExited.RemoveListener(Release);
+            grabInteractable.lastSelectExited.RemoveListener(Release);
         }
         imgDisplay.gameObject.SetActive(false); 
         isActive = true;
