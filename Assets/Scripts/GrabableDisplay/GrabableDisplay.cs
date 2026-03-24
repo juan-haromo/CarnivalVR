@@ -54,6 +54,7 @@ public class GrabableDisplay : MonoBehaviour
 
     private void Release(SelectExitEventArgs arg0)
     {
+        if(!arg0.interactableObject.isSelected){return;}
         imgDisplay.gameObject.SetActive(true);
         isActive = true;
     }
