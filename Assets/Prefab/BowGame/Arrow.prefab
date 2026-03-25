@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifeTime: 5
   rb: {fileID: 3082559607621810714}
+  arrowMehs: {fileID: 2214967869220305969}
 --- !u!96 &5308424077690361992
 TrailRenderer:
   serializedVersion: 4
