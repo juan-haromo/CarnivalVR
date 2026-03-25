@@ -6,7 +6,7 @@ public class Bow : MonoBehaviour
 {
     [Header("Grab Points")]
     [SerializeField] Transform bowGrabPoint;
-    [SerializeField] Transform bowstringGrabPoint;
+    [SerializeField] Transform boneString;
 
     [Header("Arrow")]
     [SerializeField] GameObject arrowMesh;
@@ -32,13 +32,11 @@ public class Bow : MonoBehaviour
     {
         //Event is called when grabbing object, Only activate it when grabbed by two hands
         grabCount++;
-        Debug.Log("Grabbed " + grabCount);
         if(grabCount == 2) 
         {
-            Debug.Log("Start updating");
             isUpdatingArrow = true;
             arrowMesh.SetActive(true);
-            bowstringMiddle = args.interactorObject.transform;
+            handBowstringPosition = args.interactorObject.transform;
         }
     }
 
@@ -47,25 +45,26 @@ public class Bow : MonoBehaviour
         //Event is called when released. Only activate when one hand released and one still grabs
         grabCount--;
         if (grabCount != 1) return;
+        isUpdatingArrow = false;
+        handBowstringPosition = null;
         ballonGame.ShootArrow();
-        Vector3 direction = bowGrabPoint.position - bowstringMiddle.position;
-        GameObject instance = Instantiate(arrowPrefab,bowstringGrabPoint.position, Quaternion.identity);
+        Vector3 direction = arrowMesh.transform.forward;
+        GameObject instance = Instantiate(arrowPrefab,arrowMesh.transform.position, arrowMesh.transform.rotation);
         instance.transform.forward = bowGrabPoint.forward;
         Rigidbody arrowRb =  instance.GetComponent<Rigidbody>();
         arrowRb.AddForce(direction * baseSpeed,ForceMode.Impulse);
         arrowRb.useGravity = true;
-        bowstringGrabPoint.position = bowStringStart.position;
+        boneString.position = bowStringStart.position;
         arrowMesh.SetActive(false);
-        isUpdatingArrow = false;
     }
 
     [Header("Bowstring")]
-    [SerializeField] Transform bowStringStart;
-    
-    Transform bowstringMiddle;
+    [SerializeField] Transform bowStringStart;    
+    [SerializeField] Transform handTracker;    
+    Transform handBowstringPosition;
+
     void UpdateArrow()
     {
-        bowstringGrabPoint.position = bowstringMiddle.position;
-        arrowMesh.transform.forward =  bowGrabPoint.position - bowstringMiddle.position;
+        boneString.position = handBowstringPosition.position;
     }
 }

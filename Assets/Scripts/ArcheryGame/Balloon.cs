@@ -79,7 +79,7 @@ public class Balloon : MonoBehaviour
         if (other.CompareTag("Arrow"))
         {
             Destroy(other.gameObject);
+            Pop();
         }
-        Pop();
     }
 }
