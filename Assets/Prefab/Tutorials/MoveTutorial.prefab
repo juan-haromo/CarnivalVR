@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7803913996988362866
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1181915986277840500, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+      propertyPath: m_text
+      value: "Usa la palanca izquierda \npara moverte"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799346983152249268, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2886608981662526767, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -684
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843139661305654701, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 307
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843139661305654701, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603600589416516570, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603600589416516570, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603600589416516570, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603600589416516570, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603600589416516570, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603600589416516570, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603600589416516570, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603600589416516570, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603600589416516570, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603600589416516570, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603600589416516570, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.475
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603600589416516570, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9666071
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603600589416516570, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0552032
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603600589416516570, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.2498395
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603600589416516570, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.014268306
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603600589416516570, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -4.349
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603600589416516570, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.667
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603600589416516570, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -1.148
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603600589416516570, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -46.351
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603600589416516570, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0.359
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842690210308304568, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+      propertyPath: m_Name
+      value: MoveTurorial Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5842690210308304568, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2913153271313691258}
+  m_SourcePrefab: {fileID: 100100000, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+--- !u!1 &4420412384286645962 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5842690210308304568, guid: 8f3bb39b19c2a8a468408d699ffa38a8, type: 3}
+  m_PrefabInstance: {fileID: 7803913996988362866}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2913153271313691258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4420412384286645962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb9df812a8704d64681f8ebce5ba29ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoveTutorial
+  movement: {fileID: 6972639530819350904, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  time: 5
