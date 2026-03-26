@@ -48,7 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GrabableDisplay
   grabInteractable: {fileID: 0}
   target: {fileID: 0}
-  detectionDistance: 1
+  detectionDistance: 1.5
   imgDisplay: {fileID: 8091409910755393422}
 --- !u!135 &8508531265721565864
 SphereCollider:
@@ -69,7 +69,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 1
+  m_Radius: 1.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &904345806293086477
 GameObject:

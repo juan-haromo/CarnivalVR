@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/TutorialScene.unity
+    guid: ba9ef958216862043ba28daded7c4529
+  - enabled: 1
     path: Assets/Scenes/Carnival.unity
     guid: a2ee7d404a9de9943b2b9f16b112648c
   m_configObjects:
