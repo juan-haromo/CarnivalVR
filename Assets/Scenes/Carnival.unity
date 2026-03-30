@@ -51854,6 +51854,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 876430476}
     - target: {fileID: 3789172549413492730, guid: f6f78f068f0d9484e9df674ae21a09ec, type: 3}
+      propertyPath: baseSpeed
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3789172549413492730, guid: f6f78f068f0d9484e9df674ae21a09ec, type: 3}
       propertyPath: ballonGame
       value: 
       objectReference: {fileID: 876430476}
@@ -51865,6 +51869,14 @@ PrefabInstance:
       propertyPath: handTracker
       value: 
       objectReference: {fileID: 74915480}
+    - target: {fileID: 3789172549413492730, guid: f6f78f068f0d9484e9df674ae21a09ec, type: 3}
+      propertyPath: isUpdatingArrow
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3789172549413492730, guid: f6f78f068f0d9484e9df674ae21a09ec, type: 3}
+      propertyPath: maxArrowDistance
+      value: 0.55
+      objectReference: {fileID: 0}
     - target: {fileID: 5123806733336963440, guid: f6f78f068f0d9484e9df674ae21a09ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.703041

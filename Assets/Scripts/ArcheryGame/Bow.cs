@@ -47,15 +47,15 @@ public class Bow : MonoBehaviour
         if (grabCount != 1) return;
         ballonGame.ShootArrow();
         isUpdatingArrow = false;
+        handBowstringPosition = null;
         Vector3 direction = arrowMesh.transform.forward;
         GameObject instance = Instantiate(arrowPrefab,arrowMesh.transform.position, arrowMesh.transform.rotation);
         instance.transform.forward = bowGrabPoint.forward;
         Rigidbody arrowRb =  instance.GetComponent<Rigidbody>();
-        float shootSpeed= baseSpeed * Vector3.Distance(handBowstringPosition.position,bowGrabPoint.position);
+        float shootSpeed= baseSpeed * Vector3.Distance(boneString.position,bowGrabPoint.position);
         arrowRb.AddForce(shootSpeed * direction,ForceMode.Impulse);
         arrowRb.useGravity = true;
         boneString.position = bowStringStart.position;
-        handBowstringPosition = null;
         arrowMesh.SetActive(false);
     }
 
@@ -63,9 +63,20 @@ public class Bow : MonoBehaviour
     [SerializeField] Transform bowStringStart;    
     [SerializeField] Transform handTracker;    
     Transform handBowstringPosition;
+    [SerializeField] float maxArrowDistance = 100;
 
     void UpdateArrow()
     {
-        boneString.position = handBowstringPosition.position;
+        float arrowDistance = Vector3.Distance(handBowstringPosition.position,bowStringStart.position);
+        Debug.Log(arrowDistance);
+        if (maxArrowDistance < arrowDistance)
+        {
+            Vector3 direction = (bowStringStart.position - handBowstringPosition.position).normalized;
+            boneString.position = bowStringStart.position - (direction*maxArrowDistance);
+        }
+        else
+        {
+            boneString.position = handBowstringPosition.position;
+        }
     }
 }
