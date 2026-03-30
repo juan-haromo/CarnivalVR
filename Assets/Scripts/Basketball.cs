@@ -18,6 +18,7 @@ public class Basketball : MonoBehaviour
     public List<Transform> BallStartPoints;
     public List<Rigidbody> Balls;
     [SerializeField] SoundPlayer scoreSound;
+    [SerializeField] SoundPlayer finishGameSound;
 
     void Awake()
     {
@@ -50,6 +51,7 @@ public class Basketball : MonoBehaviour
     void EndGame()
     {
         UpdateBalls(false);
+        finishGameSound.PlaySound();
         isGamePlaying = false;
         if(highScore < score)
         {
