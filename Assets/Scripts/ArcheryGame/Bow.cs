@@ -45,16 +45,17 @@ public class Bow : MonoBehaviour
         //Event is called when released. Only activate when one hand released and one still grabs
         grabCount--;
         if (grabCount != 1) return;
-        isUpdatingArrow = false;
-        handBowstringPosition = null;
         ballonGame.ShootArrow();
+        isUpdatingArrow = false;
         Vector3 direction = arrowMesh.transform.forward;
         GameObject instance = Instantiate(arrowPrefab,arrowMesh.transform.position, arrowMesh.transform.rotation);
         instance.transform.forward = bowGrabPoint.forward;
         Rigidbody arrowRb =  instance.GetComponent<Rigidbody>();
-        arrowRb.AddForce(direction * baseSpeed,ForceMode.Impulse);
+        float shootSpeed= baseSpeed * Vector3.Distance(handBowstringPosition.position,bowGrabPoint.position);
+        arrowRb.AddForce(shootSpeed * direction,ForceMode.Impulse);
         arrowRb.useGravity = true;
         boneString.position = bowStringStart.position;
+        handBowstringPosition = null;
         arrowMesh.SetActive(false);
     }
 
