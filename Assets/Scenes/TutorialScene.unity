@@ -1199,6 +1199,7 @@ GameObject:
   - component: {fileID: 637690479}
   - component: {fileID: 637690478}
   - component: {fileID: 637690477}
+  - component: {fileID: 637690480}
   m_Layer: 0
   m_Name: Keys
   m_TagString: Untagged
@@ -1413,6 +1414,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.1087904, y: 0.06333643, z: 0.24098748}
   m_Center: {x: 0.0024485588, y: 0.00023284554, z: 0.07182041}
+--- !u!114 &637690480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637690475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045804885fe64b54d88736a3b0e116a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ReturnDroppedObject
+  interactable: {fileID: 637690477}
+  timeToReturn: 2.5
 --- !u!1 &687528412
 GameObject:
   m_ObjectHideFlags: 0
