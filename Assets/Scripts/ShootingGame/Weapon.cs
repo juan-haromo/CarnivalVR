@@ -16,7 +16,6 @@ public class Weapon : MonoBehaviour
     
     public void Shoot(ActivateEventArgs args)
     {
-        if(args.interactorObject != shootInteractor){return;}
         Shoot();
     }
     void Shoot(){
