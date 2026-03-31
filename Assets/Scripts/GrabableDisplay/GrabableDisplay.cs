@@ -19,8 +19,9 @@ public class GrabableDisplay : MonoBehaviour
         {
             target = GrabDisplayManager.Instance.targert;
         }
-        imgDisplay.gameObject.SetActive(false); 
         isActive = true;
+        isInRange = false;
+        isDirty = true;
     }
 
     void OnDisable()
@@ -30,8 +31,7 @@ public class GrabableDisplay : MonoBehaviour
             grabInteractable.selectEntered.RemoveListener(Grab);   
             grabInteractable.lastSelectExited.RemoveListener(Release);
         }
-        imgDisplay.gameObject.SetActive(false); 
-        isActive = true;
+        isActive = false;
     }
     #endregion
     
@@ -40,8 +40,10 @@ public class GrabableDisplay : MonoBehaviour
     [SerializeField] float detectionDistance;
     [SerializeField] Image imgDisplay;
     float t;
+    bool isDirty;
     void Update()
     {
+        if(isDirty){imgDisplay.gameObject.SetActive(isActive && isInRange);}
         if(!isActive || !isInRange){return;}
         float distance = Vector3.Distance(target.position,transform.position);
         imgDisplay.gameObject.SetActive(true);
@@ -54,14 +56,15 @@ public class GrabableDisplay : MonoBehaviour
 
     private void Release(SelectExitEventArgs arg0)
     {
-        imgDisplay.gameObject.SetActive(true);
         isActive = true;
+        isInRange = false;
+        isDirty = true;
     }
 
     private void Grab(SelectEnterEventArgs arg0)
     {
-        imgDisplay.gameObject.SetActive(false);
         isActive = false;
+        isDirty = true;
     }
 
     bool isInRange;
@@ -70,13 +73,13 @@ public class GrabableDisplay : MonoBehaviour
     {
         if(!isActive){return;}
         isInRange = true;
-        imgDisplay.gameObject.SetActive(true);
+        isDirty = true;
     }
 
     void OnTriggerExit(Collider other)
     {
         if(!isActive){return;}
         isInRange = false;
-        imgDisplay.gameObject.SetActive(false);
+        isDirty = true;
     }
 }
