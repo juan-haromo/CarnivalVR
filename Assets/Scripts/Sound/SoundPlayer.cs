@@ -24,4 +24,15 @@ public class SoundPlayer : MonoBehaviour
         source.pitch = Random.Range(minPitch,maxcPitch);
         source.PlayOneShot(_clips[i]);
     }
+
+    public void PlaySound(SoundContainer container)
+    {
+        source.Stop();
+        AudioClip clip = container.GetSound();
+        if (clip != null)
+        {
+            source.pitch = Random.Range(minPitch, maxcPitch);
+            source.PlayOneShot(clip);
+        }
+    }
 }

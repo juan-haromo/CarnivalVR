@@ -42,6 +42,7 @@ public class ReturnDroppedObject : MonoBehaviour
 
     private void Released(SelectExitEventArgs arg0)
     {
+        if(!gameObject.activeSelf){return;}
         if(ReturnRoutine != null) { StopCoroutine(ReturnRoutine);}
         ReturnRoutine = StartCoroutine(ReturnToSpawn());
     }
