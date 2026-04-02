@@ -434,6 +434,7 @@ GameObject:
   - component: {fileID: 7789977877449733433}
   - component: {fileID: 2676349212874327801}
   - component: {fileID: 5769790886165048891}
+  - component: {fileID: 2123353354625325524}
   m_Layer: 0
   m_Name: BuyDome
   m_TagString: Untagged
@@ -461,6 +462,7 @@ Transform:
   - {fileID: 3981406225074562675}
   - {fileID: 5293730537662940940}
   - {fileID: 7984694498175639989}
+  - {fileID: 5496192709373446609}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7789977877449733433
@@ -475,9 +477,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab55726426588f74c8f5a2fcbd082f52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BuyDome
-  ticketManager: {fileID: 0}
   dome: {fileID: 8567878386799399809}
-  product: {fileID: 0}
+  productSpawnPoint: {fileID: 5496192709373446609}
+  productPool: {fileID: 2123353354625325524}
   domeCost: 5
   costTag: {fileID: 5289470434283625878}
   closePoint: {fileID: 2325274105821821821}
@@ -599,6 +601,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2123353354625325524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6215958981411048314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1bf17e84c80f1479b7c8300cbc24b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameObjectPool
+  initialPoolSize: 2
+  interactablePooledObject: {fileID: 0}
 --- !u!1 &6518406292424192616
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,6 +669,37 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7435717094956176940}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1467613413281391371}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7961696986238209011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5496192709373446609}
+  m_Layer: 0
+  m_Name: ProductSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5496192709373446609
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7961696986238209011}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}

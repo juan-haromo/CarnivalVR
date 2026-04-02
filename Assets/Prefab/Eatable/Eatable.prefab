@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1232924312482760582}
   - component: {fileID: 6103327887797495124}
   - component: {fileID: 7232009446902418827}
+  - component: {fileID: 5951004254019771761}
   m_Layer: 0
   m_Name: Eatable
   m_TagString: Untagged
@@ -50,10 +51,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EatableFood
   clips: []
-  startPoint: {fileID: 0}
   model: {fileID: 2770198176840971279}
   rb: {fileID: 1232924312482760582}
   grabInteractable: {fileID: 6103327887797495124}
+  pooledObject: {fileID: 5951004254019771761}
 --- !u!54 &1232924312482760582
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -249,6 +250,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ReturnDroppedObject
   interactable: {fileID: 6103327887797495124}
   timeToReturn: 5
+--- !u!114 &5951004254019771761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5775208325346187823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff3d644a60584444e8dfbf03f1a6dbe5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::XRInteractablePooledObject
+  interactable: {fileID: 6103327887797495124}
+  grabDisplay: {fileID: 4184734805229517904}
 --- !u!1 &8924528332273251761
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,9 +7,9 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables;
 public class BuyDome : MonoBehaviour
 {
     [Header("References")]
-    public TicketManager ticketManager;
     [SerializeField] Transform dome;
-    [SerializeField] XRGrabInteractable product;
+    [SerializeField] Transform productSpawnPoint;
+    [SerializeField] GameObjectPool productPool;
     [SerializeField] private int domeCost = 5;
     [SerializeField] private TextMeshProUGUI costTag;
     [Header("Dome Positions")]
@@ -26,7 +26,7 @@ public class BuyDome : MonoBehaviour
     {
         if(!hasProduct){return;}
 
-        if (ticketManager.SpendTickets(domeCost))
+        if (TicketManager.Instance.SpendTickets(domeCost))
         {
             hasProduct = false;
             soundPlayer.PlaySound(buySound);
@@ -38,19 +38,20 @@ public class BuyDome : MonoBehaviour
         }
     }
 
-    void Awake()
+    void Start()
     {
         GenerateProduct();
         costTag.text = "x " + domeCost.ToString();
     }
 
-        XRGrabInteractable productInstance;
+    XRInteractablePooledObject productInstance;
     void GenerateProduct()
     {
-        
-        productInstance = Instantiate(product, dome.position, product.transform.rotation).GetComponent<XRGrabInteractable>();
-        productInstance.selectEntered.AddListener(RestockProduct);
-        productInstance.enabled = false;
+        productInstance = productPool.GetPooledObject() as XRInteractablePooledObject;
+        productInstance.transform.SetPositionAndRotation(productSpawnPoint.position, productSpawnPoint.rotation);
+        productInstance.Interactable.selectEntered.AddListener(RestockProduct);
+        productInstance.SetInteractable(false);
+        productInstance.gameObject.SetActive(true);
     }
 
     private void RestockProduct(SelectEnterEventArgs arg0)
@@ -66,7 +67,7 @@ public class BuyDome : MonoBehaviour
             dome.position = Vector3.MoveTowards(dome.position, openPoint.position, Time.deltaTime * openCloseSpeed);
             yield return new WaitForEndOfFrame();
         }
-        productInstance.enabled = true;
+        productInstance.SetInteractable(true);
     }
 
     IEnumerator CloseDone()

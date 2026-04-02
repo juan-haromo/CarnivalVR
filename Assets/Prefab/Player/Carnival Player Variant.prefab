@@ -1500,9 +1500,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d617b34b388de45a507409d5454025, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AutoScaler
-  actionReference: {fileID: 2476075633897670817, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   defaultHeight: 1.84
+  minHeight: 0
+  maxHeight: 0
   cameraOffset: {fileID: 7567476656020824416}
+  inputActionReference: {fileID: 0}
 --- !u!4 &7567476656020824416 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1767192434, guid: cbafac2052fcf2344b394b1633040a03, type: 3}

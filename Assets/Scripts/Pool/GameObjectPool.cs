@@ -8,7 +8,7 @@ public class GameObjectPool : MonoBehaviour
     [SerializeField] private PooledObject interactablePooledObject;
     private Stack<PooledObject> stack;
 
-    void Start()
+    void Awake()
     {
         SetUpPool();
     }
