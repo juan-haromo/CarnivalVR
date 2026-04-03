@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameObjectPool : MonoBehaviour
 {
     [SerializeField] private int initialPoolSize = 3;
-    [SerializeField] private PooledObject interactablePooledObject;
+    [SerializeField] private PooledObject pooledObjectPrefab;
     private Stack<PooledObject> stack;
 
     void Awake()
@@ -24,9 +24,9 @@ public class GameObjectPool : MonoBehaviour
         }
     }
 
-    private PooledObject CreateNewPooledObject()
+    protected virtual PooledObject CreateNewPooledObject()
     {
-        PooledObject instance = Instantiate(interactablePooledObject).GetComponent<PooledObject>();
+        PooledObject instance = Instantiate(pooledObjectPrefab).GetComponent<PooledObject>();
         instance.gameObject.SetActive(false);
         instance.Pool = this;
         return instance;

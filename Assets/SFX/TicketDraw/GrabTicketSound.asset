@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e464ea909bb7804a9e8b089dcaed25b, type: 3}
+  m_Name: GrabTicketSound
+  m_EditorClassIdentifier: Assembly-CSharp::SoundContainer
+  sounds:
+  - {fileID: 8300000, guid: 55676fbab075cf140b21e9b69bb041bf, type: 3}
+  - {fileID: 8300000, guid: 1835b0a97939de145b7a3c5fdbc2f259, type: 3}
+  - {fileID: 8300000, guid: f36d75136060d964a964ecce54459d52, type: 3}
+  - {fileID: 8300000, guid: c58cb246bdf46c743b3b3f39662de5d2, type: 3}
+  - {fileID: 8300000, guid: 7558e91fdbc924543a7478c879ed7cad, type: 3}
+  - {fileID: 8300000, guid: 6004f9383391cc3449c5c00d671ebcb8, type: 3}
+  - {fileID: 8300000, guid: f671b92d2eaf3af489d5236b1138ce3b, type: 3}
+  - {fileID: 8300000, guid: f76b7774d04bc5f4ea1d9495bc44cae3, type: 3}
+  - {fileID: 8300000, guid: e7a79d27c093f47489429fe2c1a2d094, type: 3}
