@@ -39,11 +39,12 @@ public class GrabableDisplay : MonoBehaviour
     [SerializeField] Transform target;
     [SerializeField] float detectionDistance;
     [SerializeField] Image imgDisplay;
+    [SerializeField] Collider col;
     float t;
     bool isDirty;
     void Update()
     {
-        if(isDirty){imgDisplay.gameObject.SetActive(isActive && isInRange);}
+        if(isDirty){imgDisplay.gameObject.SetActive(isActive && isInRange); isDirty = false;}
         if(!isActive || !isInRange){return;}
         float distance = Vector3.Distance(target.position,transform.position);
         imgDisplay.gameObject.SetActive(true);
@@ -59,6 +60,8 @@ public class GrabableDisplay : MonoBehaviour
         isActive = true;
         isInRange = false;
         isDirty = true;
+        col.enabled = false;
+        col.enabled = true;
     }
 
     private void Grab(SelectEnterEventArgs arg0)
@@ -71,14 +74,12 @@ public class GrabableDisplay : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(!isActive){return;}
         isInRange = true;
         isDirty = true;
     }
 
     void OnTriggerExit(Collider other)
     {
-        if(!isActive){return;}
         isInRange = false;
         isDirty = true;
     }
