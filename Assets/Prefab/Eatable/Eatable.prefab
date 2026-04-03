@@ -264,6 +264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRInteractablePooledObject
   interactable: {fileID: 6103327887797495124}
   grabDisplay: {fileID: 4184734805229517904}
+  rb: {fileID: 1232924312482760582}
 --- !u!1 &8924528332273251761
 GameObject:
   m_ObjectHideFlags: 0

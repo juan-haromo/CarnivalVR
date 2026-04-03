@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class TicketMachine : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class TicketMachine : MonoBehaviour
     [SerializeField] SoundPlayer soundPlayer;
     [SerializeField] SoundContainer grabTicketSound;
     [SerializeField] SoundContainer dispenseTicketSound;
+    [SerializeField] XRSimpleInteractable interactable;
+    [SerializeField] Transform grabDisplay;
     private int totalTickets;
 
     Stack<PooledObject> activeTickets;
@@ -20,10 +23,19 @@ public class TicketMachine : MonoBehaviour
     void Start()
     {
         activeTickets = new Stack<PooledObject>();
+        SetInteractable(false);
+        DispenseTicket(5); // Start with some tickets in the machine
+    }
+
+    private void SetInteractable(bool state)
+    {
+        interactable.enabled = state;
+        grabDisplay.gameObject.SetActive(state);
     }
 
     public void DispenseTicket(int ticketCount = 1)
     {
+        SetInteractable(true);
         soundPlayer.PlaySound(dispenseTicketSound);
         for (int i = 0; i < ticketCount; i++)
         {
@@ -44,6 +56,7 @@ public class TicketMachine : MonoBehaviour
 
     public void GrabTickets()
     {
+        SetInteractable(false);
         StartCoroutine(GrabTicketsCoroutine());
     }
 
@@ -56,18 +69,5 @@ public class TicketMachine : MonoBehaviour
             yield return new WaitForSeconds(grabTicketDelay); // Delay between grabbing each ticket
         }
         totalTickets = 0;
-    }
-
-    void Update()
-    {
-        if(Mouse.current.leftButton.wasPressedThisFrame)
-        {
-            DispenseTicket();   
-        }
-
-        if(Mouse.current.rightButton.wasPressedThisFrame)
-        {
-            GrabTickets();
-        }
     }
 }
