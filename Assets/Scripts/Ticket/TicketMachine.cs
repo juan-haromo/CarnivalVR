@@ -9,7 +9,7 @@ public class TicketMachine : MonoBehaviour
     [SerializeField] private GameObjectPool ticketPool;
     [SerializeField] private Transform ticketSpawnPoint;
     [SerializeField] private float ticketDelta = 0.1f;
-    [SerializeField] private float grabTicketDelay = 0.1f;
+    [SerializeField] private float grabTicketDelay = 0.05f;
     [SerializeField] SoundPlayer soundPlayer;
     [SerializeField] SoundContainer grabTicketSound;
     [SerializeField] SoundContainer dispenseTicketSound;
@@ -24,7 +24,6 @@ public class TicketMachine : MonoBehaviour
     {
         activeTickets = new Stack<PooledObject>();
         SetInteractable(false);
-        DispenseTicket(5); // Start with some tickets in the machine
     }
 
     private void SetInteractable(bool state)

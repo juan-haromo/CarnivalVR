@@ -17,5 +17,5 @@ public class StickScore : MonoBehaviour
         scoreText.text = score.ToString("D2");
     }   
 
-
+    public int GetScore() => score;
 }
