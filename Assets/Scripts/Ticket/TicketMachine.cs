@@ -65,6 +65,7 @@ public class TicketMachine : MonoBehaviour
         {
             soundPlayer.PlaySound(grabTicketSound);
             activeTickets.Pop().ReturnToPool();
+            TicketManager.Instance.AddTickets(1);
             yield return new WaitForSeconds(grabTicketDelay); // Delay between grabbing each ticket
         }
         totalTickets = 0;
