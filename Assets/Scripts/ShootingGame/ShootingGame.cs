@@ -16,6 +16,9 @@ public class ShootingGame : MonoBehaviour
     [SerializeField] ShootingGameScoreDisplay highScoreUI;
     ShootingGameScore highScore;
 
+    [SerializeField] TicketMachine ticketMachine;
+    [SerializeField] TicketTable ticketTable;
+
 
     void Start()
     {
@@ -129,6 +132,7 @@ public class ShootingGame : MonoBehaviour
 
     void SaveScore()
     {
+        ticketMachine.DispenseTicket(ticketTable.GetTicketAmountForScore(currentScore.targetsHit));
         //Less targets hit
         if(currentScore.targetsHit < highScore.targetsHit){return;}
         
@@ -158,5 +162,4 @@ public class ShootingGame : MonoBehaviour
         remainingTargets--;
     }
 }
-
 

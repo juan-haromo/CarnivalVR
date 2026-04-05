@@ -49382,6 +49382,7 @@ MonoBehaviour:
   currentScoreUI: {fileID: 1785102189}
   highScoreUI: {fileID: 1612047795318294146}
   ticketMachine: {fileID: 24404962}
+  ticketTable: {fileID: 0}
 --- !u!1 &1993788292
 GameObject:
   m_ObjectHideFlags: 0
@@ -53059,6 +53060,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1576162938514493002, guid: a0b7cd3622cc8d84bbc31713b145e9ed, type: 3}
+      propertyPath: ticketTableData
+      value: 
+      objectReference: {fileID: 11400000, guid: f3a0bb90c68ca5e4b953a3602e88c0f6, type: 2}
     - target: {fileID: 7545255658337286439, guid: a0b7cd3622cc8d84bbc31713b145e9ed, type: 3}
       propertyPath: m_Name
       value: ShootingGameTicketTable
