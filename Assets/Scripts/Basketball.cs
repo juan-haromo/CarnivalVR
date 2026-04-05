@@ -19,6 +19,8 @@ public class Basketball : MonoBehaviour
     public List<Rigidbody> Balls;
     [SerializeField] SoundPlayer scoreSound;
     [SerializeField] SoundPlayer finishGameSound;
+    [SerializeField] TicketMachine ticketMachine;
+    [SerializeField] TicketTable ticketTable;
 
     void Awake()
     {
@@ -59,6 +61,7 @@ public class Basketball : MonoBehaviour
             PlayerPrefs.SetInt(HIGH_SCORE_KEY,highScore);
             lblHighScore.text = highScore.ToString("D2");
         }
+        ticketMachine.DispenseTicket(ticketTable.GetTicketAmountForScore(score));
     }
     
     IEnumerator Timer()
@@ -68,6 +71,7 @@ public class Basketball : MonoBehaviour
             yield return new WaitForSeconds(1);
             timer.text = i.ToString("D2");
         }
+        timer.text = "00";
         EndGame();
     }
 
