@@ -31,12 +31,12 @@ public class TicketTable : MonoBehaviour
         lblGameName.text = ticketTableData.GameName;
         string displayText;
         displayText = ticketTableData.entries[0].scoreThreshold.ToString("D2") + "      = " + ticketTableData.entries[0].ticketAmount + "\n";
-        for(int i = 1; i < ticketTableData.entries.Count - 1; i++)
+        for(int i = 1; i < ticketTableData.entries.Count; i++)
         {
-            displayText += (ticketTableData.entries[i+1].scoreThreshold - 1).ToString("D2")   
-                + " - " + ticketTableData.entries[i].scoreThreshold.ToString("D2") + " = " + ticketTableData.entries[i].ticketAmount + "\n";
+            displayText += ticketTableData.entries[i].scoreThreshold.ToString("D2") 
+                + " - " +  (ticketTableData.entries[i-1].scoreThreshold - 1).ToString("D2") + " = " + ticketTableData.entries[i].ticketAmount + "\n";
         }
-        displayText += "00 - " + ticketTableData.entries[^1].scoreThreshold.ToString("D2") + " = " + ticketTableData.entries[^1].ticketAmount;
+        displayText += "00 - " + (ticketTableData.entries[^1].scoreThreshold - 1).ToString("D2") + " = 0" ;
         lblTableDisplay.text = displayText;
     }
 }
