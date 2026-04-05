@@ -19,18 +19,9 @@ public class TicketTable : MonoBehaviour
         }
         return ticketAmount;
     }
-    void TestTable()
-    {
-        for(int i = 0; i <= ticketTableData.entries[0].scoreThreshold; i++)
-        {
-            Debug.Log(i + " = " + GetTicketAmountForScore(i));
-        }
-    }
-
     void Start()
     {
         GenerateTable();
-        TestTable();
     }
 
     [SerializeField] TextMeshProUGUI lblGameName;   

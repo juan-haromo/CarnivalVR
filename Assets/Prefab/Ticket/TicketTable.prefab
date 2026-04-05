@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dispara botellas
+  m_text: Title
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c565a5e2cc0cf5d448308ff0bc2ac4ad, type: 2}
   m_sharedMaterial: {fileID: 3820194039074371420, guid: c565a5e2cc0cf5d448308ff0bc2ac4ad, type: 2}

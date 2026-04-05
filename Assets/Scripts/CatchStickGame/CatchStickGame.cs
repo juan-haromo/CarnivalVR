@@ -13,6 +13,7 @@ public class CatchStickGame : MonoBehaviour
     [SerializeField] StickScore score;
     [SerializeField] TextMeshProUGUI countDownText;
     [SerializeField] TicketMachine ticketMachine;
+    [SerializeField] TicketTable ticketTable;
 
     void Start()
     {
@@ -67,17 +68,9 @@ public class CatchStickGame : MonoBehaviour
             stick.ReturnToStart();
             stick.gameObject.SetActive(true);
         }
-        ticketMachine.DispenseTicket(GetTickets(score.GetScore()));
+        ticketMachine.DispenseTicket(ticketTable.GetTicketAmountForScore(score.GetScore()));
         countDownText.text = "00";
         isPlaying = false;
     }
 
-    public int GetTickets(int score)
-    {
-        if(score < 80)
-        {
-            return (int)(score * 0.5f);
-        }
-        return 50;
-    }
 }
