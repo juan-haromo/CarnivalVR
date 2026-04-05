@@ -741,6 +741,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af2fd9068941a4f448eba25b85509059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TicketManager
+  lblTicketDisplay: {fileID: 0}
+  ticketMenu: {fileID: 0}
+  openTicketMenuAction: {fileID: 0}
 --- !u!1 &6332510081899616969
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,7 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.PlayerLoop;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class TicketMachine : MonoBehaviour
@@ -15,6 +19,7 @@ public class TicketMachine : MonoBehaviour
     [SerializeField] SoundContainer dispenseTicketSound;
     [SerializeField] XRSimpleInteractable interactable;
     [SerializeField] Transform grabDisplay;
+    [SerializeField] TextMeshProUGUI lblTicketAmount;
     private int totalTickets;
 
     Stack<PooledObject> activeTickets;
@@ -35,13 +40,16 @@ public class TicketMachine : MonoBehaviour
     public void DispenseTicket(int ticketCount = 1)
     {
         SetInteractable(true);
+        Mathf.Max(0, ticketCount);
         soundPlayer.PlaySound(dispenseTicketSound);
         for (int i = 0; i < ticketCount; i++)
         {
             SpawnTicket();
             totalTickets++;
         }
+        UpdateTicketAmountDisplay();
     }
+
 
     void SpawnTicket()
     {
@@ -69,5 +77,12 @@ public class TicketMachine : MonoBehaviour
             yield return new WaitForSeconds(grabTicketDelay); // Delay between grabbing each ticket
         }
         totalTickets = 0;
+        UpdateTicketAmountDisplay();
+    }
+
+    
+    private void UpdateTicketAmountDisplay()
+    {
+        lblTicketAmount.text = "X " + totalTickets.ToString();
     }
 }
