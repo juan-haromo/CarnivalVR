@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ece180ba8d5093e44a59f50a8851db8f, type: 3}
+  m_Name: ArcheryGameTicketData
+  m_EditorClassIdentifier: Assembly-CSharp::TicketTableData
+  GameName: "\xA1En el globo!"
+  entries:
+  - ticketAmount: 500
+    scoreThreshold: 5
+  - ticketAmount: 100
+    scoreThreshold: 10
+  - ticketAmount: 50
+    scoreThreshold: 20
+  - ticketAmount: 30
+    scoreThreshold: 30
+  - ticketAmount: 15
+    scoreThreshold: 40
+  - ticketAmount: 10
+    scoreThreshold: 50
+  - ticketAmount: 5
+    scoreThreshold: 60
+  - ticketAmount: 1
+    scoreThreshold: 90

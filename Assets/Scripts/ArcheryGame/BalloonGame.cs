@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using NUnit.Framework;
 using UnityEngine;
 
 public class BallonGame : MonoBehaviour
@@ -59,18 +60,34 @@ public class BallonGame : MonoBehaviour
         totalBallons--;
         if(totalBallons <= 0)
         {
-            bow.linearVelocity = Vector3.zero;
-            bow.angularVelocity = Vector3.zero;
-            bow.transform.SetPositionAndRotation(bowStartPoint.position,bowStartPoint.rotation);
-            bow.gameObject.SetActive(false);  
-            RegisterHighScore();
-            isPlaying = false;
+            EndGame();
         }
     }
 
-    #region Score
+    void EndGame()
+    {
+        bow.linearVelocity = Vector3.zero;
+        bow.angularVelocity = Vector3.zero;
+        bow.transform.SetPositionAndRotation(bowStartPoint.position,bowStartPoint.rotation);
+        bow.gameObject.SetActive(false);  
+        RegisterHighScore();
+        isPlaying = false; 
+        DispenseTickets();
+    }
+    #region  Tickets
+    [Header("Tickets")]
+    [SerializeField] TimeBasedTicketTable ticketTable;
+    [SerializeField] TicketMachine ticketMachine;
 
+    void DispenseTickets()
+    {
+        ticketMachine.DispenseTicket(ticketTable.GetTicketAmountForScore(currentScore.time));
+    }
+    #endregion
+
+    #region Score
     ArcheryScore currentScore;
+    [Header("Score")]
     [SerializeField] ArcheryScoreDisplay currentScoreDisplay;
     ArcheryScore highScore;
     [SerializeField] ArcheryScoreDisplay highScoreDisplay;
@@ -82,7 +99,7 @@ public class BallonGame : MonoBehaviour
     {
         highScore = new ArcheryScore
         {
-            time = PlayerPrefs.GetInt(TIME_KEY,99_959),
+            time = PlayerPrefs.GetInt(TIME_KEY,3599),
             arrows = PlayerPrefs.GetInt(ARROWS_KEY,999)
         };
         highScoreDisplay.UpdateDisplay(highScore);
@@ -122,6 +139,7 @@ public class BallonGame : MonoBehaviour
             currentScore.time++; 
             currentScoreDisplay.UpdateTime(currentScore.time);
             yield return new WaitForSeconds(1);
+            if(120 <currentScore.time){EndGame(); yield break;} // failsafe to end game after 2 minutes
         } 
     }
     #endregion

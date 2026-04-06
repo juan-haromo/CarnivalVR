@@ -176,6 +176,39 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8b4dd1d5b49c9c4782340b3ab6b2ab8, type: 3}
+--- !u!1 &3342615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3342616}
+  m_Layer: 0
+  m_Name: TowerOfCansScore
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3342616
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3342615}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.000000014901159, z: -0, w: 1}
+  m_LocalPosition: {x: -8.94, y: 1.403, z: -2.854}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7109526608945146959}
+  - {fileID: 1522600434266845575}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &9189663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12089,6 +12122,67 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba6337b7c59faae4e90dc29e12b30dd5, type: 3}
+--- !u!1001 &406210185
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2305481677876595756, guid: a613200a6bc7a1742863c000e04a491f, type: 3}
+      propertyPath: ticketTableData
+      value: 
+      objectReference: {fileID: 11400000, guid: 199b770bbdbefa24fa26b34b87dfb02c, type: 2}
+    - target: {fileID: 4427623069306166735, guid: a613200a6bc7a1742863c000e04a491f, type: 3}
+      propertyPath: m_Name
+      value: ArcheryGameTicketTable
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235023611602847434, guid: a613200a6bc7a1742863c000e04a491f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.2136
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235023611602847434, guid: a613200a6bc7a1742863c000e04a491f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.915
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235023611602847434, guid: a613200a6bc7a1742863c000e04a491f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 17.3166
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235023611602847434, guid: a613200a6bc7a1742863c000e04a491f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9238797
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235023611602847434, guid: a613200a6bc7a1742863c000e04a491f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235023611602847434, guid: a613200a6bc7a1742863c000e04a491f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.38268316
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235023611602847434, guid: a613200a6bc7a1742863c000e04a491f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235023611602847434, guid: a613200a6bc7a1742863c000e04a491f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235023611602847434, guid: a613200a6bc7a1742863c000e04a491f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235023611602847434, guid: a613200a6bc7a1742863c000e04a491f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a613200a6bc7a1742863c000e04a491f, type: 3}
 --- !u!1 &410081878
 GameObject:
   m_ObjectHideFlags: 0
@@ -20219,14 +20313,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 801162524}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0.000000749014}
-  m_LocalPosition: {x: -8.53, y: 1.127, z: -2.14}
+  m_LocalRotation: {x: -0, y: 0.9238794, z: -0, w: 0.38268393}
+  m_LocalPosition: {x: -7.981, y: 1.372, z: -2.69}
   m_LocalScale: {x: 0.91050535, y: 0.4377266, z: 0.91050535}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 410081879}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 900, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 855, z: 0}
 --- !u!1001 &804952823
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21908,6 +22002,8 @@ MonoBehaviour:
   - {fileID: 698529671}
   bowStartPoint: {fileID: 307898804}
   bow: {fileID: 449401799}
+  ticketTable: {fileID: 1781355629}
+  ticketMachine: {fileID: 1091706746}
   currentScoreDisplay: {fileID: 5563827310102134025}
   highScoreDisplay: {fileID: 2108551270}
 --- !u!1 &877434873
@@ -26242,6 +26338,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3471841922033143499, guid: e0c57dea3f2278149bc3f31dcee4013b, type: 3}
   m_PrefabInstance: {fileID: 729879930}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1091706746 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1592991438046553252, guid: dd167911175ffe14992fcee87a7daf10, type: 3}
+  m_PrefabInstance: {fileID: 239143966}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d5824e805a9d2a4c82e7c5e124d379f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TicketMachine
 --- !u!1001 &1093580690
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40405,6 +40512,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42aa1e9499df7694e8b65c6fc8dedbf7, type: 3}
+--- !u!114 &1781355629 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2305481677876595756, guid: a613200a6bc7a1742863c000e04a491f, type: 3}
+  m_PrefabInstance: {fileID: 406210185}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc467669f47086c4c8fb838117052564, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TimeBasedTicketTable
 --- !u!1001 &1785102188
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53997,12 +54115,11 @@ Transform:
   m_GameObject: {fileID: 5518593156079886470}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.96592593, z: -0, w: -0.25881892}
-  m_LocalPosition: {x: -8.730154, y: 1.403, z: -2.7676384}
-  m_LocalScale: {x: 0.6, y: 0.4, z: 0.2}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.60000014, y: 0.4, z: 0.20000002}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7109526608945146959}
-  m_Father: {fileID: 0}
+  m_Children: []
+  m_Father: {fileID: 3342616}
   m_LocalEulerAnglesHint: {x: 0, y: -210, z: 0}
 --- !u!1 &1556463907623631894
 GameObject:
@@ -55241,7 +55358,7 @@ GameObject:
   - component: {fileID: 5944524702058617813}
   - component: {fileID: 936322754248533592}
   m_Layer: 10
-  m_Name: TowerofCansScore
+  m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55973,20 +56090,20 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7043923491456722538}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.51}
-  m_LocalScale: {x: 0.0005, y: 0.00075, z: 1}
+  m_LocalRotation: {x: -0, y: -0.96592593, z: -0, w: -0.25881892}
+  m_LocalPosition: {x: 0, y: 0, z: 0.08833456}
+  m_LocalScale: {x: 0.0003, y: 0.0003, z: 0.0003}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3852051066288927295}
   - {fileID: 1253451024935095443}
   - {fileID: 695452150}
   - {fileID: 1894057346510093746}
-  m_Father: {fileID: 1522600434266845575}
+  m_Father: {fileID: 3342616}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.05099964, y: 0}
   m_SizeDelta: {x: 1800, y: 1200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &7235961939004469722
@@ -57405,6 +57522,7 @@ SceneRoots:
   - {fileID: 784286099}
   - {fileID: 876430475}
   - {fileID: 239143966}
+  - {fileID: 406210185}
   - {fileID: 1451676269}
   - {fileID: 72574476}
   - {fileID: 307898804}
@@ -57443,7 +57561,7 @@ SceneRoots:
   - {fileID: 1008476928}
   - {fileID: 1639126319}
   - {fileID: 324397538}
-  - {fileID: 1522600434266845575}
+  - {fileID: 3342616}
   - {fileID: 1771267736}
   - {fileID: 1331154354}
   - {fileID: 1988363665}
