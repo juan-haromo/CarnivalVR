@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-5552121197359519171
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: EyeofTheStorm_{-5552121197359519171}
+  m_AudioClip: {fileID: 8300000, guid: 0d9f0c4215a2219438ef03870037d64d, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &4339095154835004383
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SparklingCosmicDust_{4339095154835004383}
+  m_AudioClip: {fileID: 8300000, guid: 9e8feca08e9ecb6409e3a80db60640d5, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HouseSongs
+  m_Volume: 0
+  m_Pitch: 0
+  m_AutomaticTriggerTime: 0
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: 0, y: 0}
+  m_PitchRandomizationRange: {x: 0, y: 0}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: 6745430868504790566}
+  - {fileID: -5552121197359519171}
+  - {fileID: 7877656424197332386}
+  - {fileID: 4339095154835004383}
+  m_AvoidRepeatingLast: 2
+  m_PlaybackMode: 2
+  m_TriggerMode: 1
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 0
+  m_VolumeRandomizationEnabled: 0
+  m_PitchRandomizationEnabled: 0
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0
+--- !u!1233149941 &6745430868504790566
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Calm_{6745430868504790566}
+  m_AudioClip: {fileID: 8300000, guid: dc81e6183cf92e74cb4dcbd66b66b3fb, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &7877656424197332386
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: First-Light-Particles_{7877656424197332386}
+  m_AudioClip: {fileID: 8300000, guid: 23143fc0b1f0cfe44986933cb22ca405, type: 3}
+  m_Volume: 0
+  m_Enabled: 1

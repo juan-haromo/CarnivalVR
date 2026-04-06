@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: BuySoundContainer
   m_EditorClassIdentifier: Assembly-CSharp::SoundContainer
   sounds:
-  - {fileID: 8300000, guid: b17e78bc36186b545b11d8f9142644df, type: 3}
+  - {fileID: 8300000, guid: 6ace8f1cff724864d95ff4a9dcc3ea64, type: 3}

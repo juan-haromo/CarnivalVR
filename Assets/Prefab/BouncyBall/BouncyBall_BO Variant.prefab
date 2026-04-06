@@ -8,10 +8,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5354474305551320347, guid: 63883c6e191a0654ab370b9778739342, type: 3}
+      propertyPath: m_MovementType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6701722790479731584, guid: 63883c6e191a0654ab370b9778739342, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: -6352221926513206239, guid: 194f9121cae4f6745a3c9bf856ae3fac, type: 3}
+    - target: {fileID: 6909279602181949656, guid: 63883c6e191a0654ab370b9778739342, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 46be2b21a63c25547ad0c6163f376be5, type: 2}
     - target: {fileID: 7430559095887558200, guid: 63883c6e191a0654ab370b9778739342, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.87285
@@ -51,6 +59,14 @@ PrefabInstance:
     - target: {fileID: 7430559095887558200, guid: 63883c6e191a0654ab370b9778739342, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482123758131453982, guid: 63883c6e191a0654ab370b9778739342, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482123758131453982, guid: 63883c6e191a0654ab370b9778739342, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8333223381389701846, guid: 63883c6e191a0654ab370b9778739342, type: 3}
       propertyPath: m_Name
