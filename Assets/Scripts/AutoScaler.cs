@@ -14,7 +14,7 @@ public class PlayerScaler : MonoBehaviour
 
     void Awake()
     {
-        Resize(PlayerPrefs.GetFloat(SCALE));
+        Resize(PlayerPrefs.GetFloat(SCALE, defaultHeight));
         inputActionReference.action.started += Resize;
     }
 
