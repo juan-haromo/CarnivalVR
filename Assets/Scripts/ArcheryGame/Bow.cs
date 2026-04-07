@@ -68,7 +68,6 @@ public class Bow : MonoBehaviour
     void UpdateArrow()
     {
         float arrowDistance = Vector3.Distance(handBowstringPosition.position,bowStringStart.position);
-        Debug.Log(arrowDistance);
         if (maxArrowDistance < arrowDistance)
         {
             Vector3 direction = (bowStringStart.position - handBowstringPosition.position).normalized;
