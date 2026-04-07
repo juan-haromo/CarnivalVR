@@ -10,24 +10,33 @@ public class PlayerScaler : MonoBehaviour
     [SerializeField] float minHeight;
     [SerializeField] float maxHeight;
     [SerializeField] Transform cameraOffset;
+    [SerializeField] private SoundPlayer soundPlayer;
+    [SerializeField] private SoundContainer growSound;
+    [SerializeField] private SoundContainer shrinkSound;
 
     void Awake()
     {
         Resize(PlayerPrefs.GetFloat(SCALE, defaultHeight));
     }
 
-    private void Resize(InputAction.CallbackContext context)
-    {
-        Resize();
-    }
 
-
-    public void Resize()
+    public void Resize(bool playSound = false)
     {
         float headHeight = Mathf.Clamp(cameraOffset.localPosition.y,minHeight,maxHeight);   
         float scale = defaultHeight/headHeight;
         Resize(scale);
         PlayerPrefs.SetFloat(SCALE,scale);
+        if(playSound)
+        {
+            if(cameraOffset.localPosition.y < headHeight )
+            {
+                soundPlayer.PlaySound(growSound);
+            }
+            else
+            {
+                soundPlayer.PlaySound(shrinkSound);
+            }
+        }
     }
 
     private void Resize(float scale)
