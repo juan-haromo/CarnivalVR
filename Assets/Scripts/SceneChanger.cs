@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class SceneChanger : MonoBehaviour
 {
-    //[SerializeField] Image fadeImage;
+    [SerializeField] private Fade fade;
 
     public void ChangeScene(string sceneName)
     {
-        SceneManager.LoadScene(sceneName);
+        fade.FadeIn(() => SceneManager.LoadScene(sceneName));
     }
 }
