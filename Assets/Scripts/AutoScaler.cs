@@ -10,12 +10,10 @@ public class PlayerScaler : MonoBehaviour
     [SerializeField] float minHeight;
     [SerializeField] float maxHeight;
     [SerializeField] Transform cameraOffset;
-    [SerializeField] InputActionReference inputActionReference;
 
     void Awake()
     {
         Resize(PlayerPrefs.GetFloat(SCALE, defaultHeight));
-        inputActionReference.action.started += Resize;
     }
 
     private void Resize(InputAction.CallbackContext context)

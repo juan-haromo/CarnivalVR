@@ -50,6 +50,7 @@ public class TicketManager : MonoBehaviour
     [Header("UI")]
     [SerializeField] TextMeshProUGUI lblTicketDisplay;
     [SerializeField] Transform ticketMenu;
+    [SerializeField] Transform cellphoneModel;
     void UpdateDisplay()
     {
         lblTicketDisplay.text = ticketCount.ToString();
@@ -64,6 +65,7 @@ public class TicketManager : MonoBehaviour
         openTicketMenuAction.action.performed += OpenTicketMenu;
         openTicketMenuAction.action.canceled += CloseTicketMenu;
         ticketMenu.gameObject.SetActive(false);
+        cellphoneModel.gameObject.SetActive(false);
     }
 
     void OnDisable()
@@ -71,16 +73,19 @@ public class TicketManager : MonoBehaviour
         openTicketMenuAction.action.performed -= OpenTicketMenu;
         openTicketMenuAction.action.canceled -= CloseTicketMenu;
         ticketMenu.gameObject.SetActive(false);
+        cellphoneModel.gameObject.SetActive(false);
     }
     
     private void OpenTicketMenu(InputAction.CallbackContext context)
     {
         ticketMenu.gameObject.SetActive(true);
+        cellphoneModel.gameObject.SetActive(true);
     }
     
     private void CloseTicketMenu(InputAction.CallbackContext context)
     {
         ticketMenu.gameObject.SetActive(false);
+        cellphoneModel.gameObject.SetActive(false);
     }
     #endregion
 }
