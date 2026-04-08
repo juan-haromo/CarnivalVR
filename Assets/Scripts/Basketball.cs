@@ -27,7 +27,8 @@ public class Basketball : MonoBehaviour
         highScore = PlayerPrefs.GetInt(HIGH_SCORE_KEY,0);
         lblHighScore.text = highScore.ToString("D2");
         score = 0;
-        EndGame();
+        lblCurrentScore.text = score.ToString("D2");
+        isGamePlaying = false;
     }
 
     void OnTriggerEnter(Collider other)
@@ -46,6 +47,7 @@ public class Basketball : MonoBehaviour
         if(isGamePlaying){return;}
         UpdateBalls(true);
         score = 0;
+        lblCurrentScore.text = score.ToString("D2");
         isGamePlaying = true;
         StartCoroutine(Timer());
     }

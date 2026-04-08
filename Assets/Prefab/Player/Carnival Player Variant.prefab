@@ -1496,6 +1496,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7007985248512266468}
     m_Modifications:
+    - target: {fileID: 3131901857478773279, guid: 572b00379ceadce4495f472479fc333d, type: 3}
+      propertyPath: detectionDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3758655279160466854, guid: 572b00379ceadce4495f472479fc333d, type: 3}
       propertyPath: m_Name
       value: Keys
@@ -1503,6 +1507,10 @@ PrefabInstance:
     - target: {fileID: 3758655279160466854, guid: 572b00379ceadce4495f472479fc333d, type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3903189294696140126, guid: 572b00379ceadce4495f472479fc333d, type: 3}
+      propertyPath: m_Radius
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4953621823161668696, guid: 572b00379ceadce4495f472479fc333d, type: 3}
       propertyPath: m_Layer
@@ -2387,7 +2395,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAreaRestriction
   fade: {fileID: 63852382937704420}
   controller: {fileID: 4574033343231539848}
-  restrictedAreaSound: {fileID: 0}
+  restrictedAreaSound: {fileID: 6320561547025340264}
 --- !u!114 &63852382937704420
 MonoBehaviour:
   m_ObjectHideFlags: 0
