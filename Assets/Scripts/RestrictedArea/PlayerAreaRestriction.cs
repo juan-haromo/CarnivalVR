@@ -1,12 +1,13 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit.Locomotion.Gravity;
+using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
 public class PlayerAreaRestriction : MonoBehaviour, IRestrictedObject
 {
     [SerializeField] Fade fade;
-    [SerializeField] private CharacterController controller;
     [SerializeField] private SoundPlayer restrictedAreaSound;
     [SerializeField] private GravityProvider gravityProvider;
+    [SerializeField] private DynamicMoveProvider moveProvider;
 
     void Start()
     {
@@ -36,6 +37,6 @@ public class PlayerAreaRestriction : MonoBehaviour, IRestrictedObject
     {
         gravityProvider.useGravity = active; 
         //controller.attachedRigidbody.useGravity = active;
-        controller.enabled = active;
+        moveProvider.enabled = active;
     }
 }

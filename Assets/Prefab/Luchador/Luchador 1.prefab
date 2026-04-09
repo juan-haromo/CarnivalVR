@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5604757630326683411}
   - component: {fileID: 7026499090785165504}
   - component: {fileID: -1063999271743536011}
+  - component: {fileID: 2798308688480097233}
   m_Layer: 0
   m_Name: Luchador 1
   m_TagString: Untagged
@@ -359,6 +360,19 @@ MonoBehaviour:
   interactable: {fileID: 7161492928227063622}
   grabDisplay: {fileID: 5468957126629364679}
   rb: {fileID: 2629294384657900953}
+--- !u!114 &2798308688480097233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5194082121698081375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b103ecd1a329f64ab3bb04c325ac940, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RestrictedRB
+  rb: {fileID: 2629294384657900953}
 --- !u!1001 &1443353904140145598
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -373,15 +387,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6909209286990610553, guid: 0fe4ee6bc5e82364aa0826da716abdab, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.73249984
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6909209286990610553, guid: 0fe4ee6bc5e82364aa0826da716abdab, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.09073001
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6909209286990610553, guid: 0fe4ee6bc5e82364aa0826da716abdab, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.19382095
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6909209286990610553, guid: 0fe4ee6bc5e82364aa0826da716abdab, type: 3}
       propertyPath: m_LocalRotation.w

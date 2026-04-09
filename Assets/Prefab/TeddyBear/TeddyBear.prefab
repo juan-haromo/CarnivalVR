@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 1596341160116140046}
   - component: {fileID: 8323001984201085540}
   - component: {fileID: 1581264406345359052}
+  - component: {fileID: 6237536191315011763}
   m_Layer: 0
   m_Name: TeddyBear
   m_TagString: Untagged
@@ -394,6 +395,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRInteractablePooledObject
   interactable: {fileID: 4485600846897653889}
   grabDisplay: {fileID: 703238921825941991}
+  rb: {fileID: 516023596725714838}
+--- !u!114 &6237536191315011763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6828925373971787959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b103ecd1a329f64ab3bb04c325ac940, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RestrictedRB
   rb: {fileID: 516023596725714838}
 --- !u!1001 &5302655420466115357
 PrefabInstance:

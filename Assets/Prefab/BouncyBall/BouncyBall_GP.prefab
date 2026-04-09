@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7482123758131453982}
   - component: {fileID: 5354474305551320347}
   - component: {fileID: -7402016254748106499}
+  - component: {fileID: 2644634599707169582}
   m_Layer: 0
   m_Name: BouncyBall_GP
   m_TagString: Untagged
@@ -252,6 +253,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRInteractablePooledObject
   interactable: {fileID: 5354474305551320347}
   grabDisplay: {fileID: 8910117473061118158}
+  rb: {fileID: 7482123758131453982}
+--- !u!114 &2644634599707169582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8333223381389701846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b103ecd1a329f64ab3bb04c325ac940, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RestrictedRB
   rb: {fileID: 7482123758131453982}
 --- !u!1001 &2613611291002593463
 PrefabInstance:

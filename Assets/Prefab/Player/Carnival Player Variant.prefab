@@ -1373,10 +1373,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 40
+  m_fontSize: 75
+  m_fontSizeBase: 75
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 30
   m_fontSizeMax: 30
   m_fontStyle: 0
@@ -2101,11 +2101,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 789841435352927096, guid: 7f41f30f24e37e046b61fdb8c98d1bbb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.011
+      value: -0.0172
       objectReference: {fileID: 0}
     - target: {fileID: 789841435352927096, guid: 7f41f30f24e37e046b61fdb8c98d1bbb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0384
+      value: 0.001
       objectReference: {fileID: 0}
     - target: {fileID: 789841435352927096, guid: 7f41f30f24e37e046b61fdb8c98d1bbb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2674,6 +2674,17 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 1767192439, guid: cbafac2052fcf2344b394b1633040a03, type: 3}
   m_PrefabInstance: {fileID: 7567476656445298194}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7720891859404264403 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 153982007679157697, guid: cbafac2052fcf2344b394b1633040a03, type: 3}
+  m_PrefabInstance: {fileID: 7567476656445298194}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b1e8c997df241c1a67045eeac79b41b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9138495780858034239 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1717954561962503725, guid: cbafac2052fcf2344b394b1633040a03, type: 3}
@@ -2708,9 +2719,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAreaRestriction
   fade: {fileID: 63852382937704420}
-  controller: {fileID: 4574033343231539848}
   restrictedAreaSound: {fileID: 6320561547025340264}
   gravityProvider: {fileID: 6927902413945221690}
+  moveProvider: {fileID: 7720891859404264403}
 --- !u!114 &63852382937704420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2888,11 +2899,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3813997124623775825, guid: f53c670745279b842a1ac40fe85002dd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.011
+      value: -0.0172
       objectReference: {fileID: 0}
     - target: {fileID: 3813997124623775825, guid: f53c670745279b842a1ac40fe85002dd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0384
+      value: 0.001
       objectReference: {fileID: 0}
     - target: {fileID: 3813997124623775825, guid: f53c670745279b842a1ac40fe85002dd, type: 3}
       propertyPath: m_LocalRotation.w
