@@ -50,7 +50,6 @@ MonoBehaviour:
   target: {fileID: 0}
   detectionDistance: 1.5
   imgDisplay: {fileID: 8091409910755393422}
-  col: {fileID: 8508531265721565864}
 --- !u!135 &8508531265721565864
 SphereCollider:
   m_ObjectHideFlags: 0
