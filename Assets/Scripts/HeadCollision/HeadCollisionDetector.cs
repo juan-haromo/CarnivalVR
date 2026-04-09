@@ -17,7 +17,7 @@ public class HeadCollisionDetector : MonoBehaviour
     private List<RaycastHit> PreformDetection(Vector3 startPosition, float distance, LayerMask mask)
     {
         List<RaycastHit> detectedHits = new List<RaycastHit>();
-        List<Vector3> directions = new List<Vector3>(){transform.forward,transform.right,-transform.right};
+        List<Vector3> directions = new List<Vector3>(){transform.forward,-transform.forward,transform.right,-transform.right};
 
         RaycastHit hit;
         foreach(Vector3 dir in directions)

@@ -11,6 +11,7 @@ public class ReturnDroppedObject : MonoBehaviour
     Coroutine ReturnRoutine;
     Vector3 intialPosition; 
     Quaternion intialRotation;
+    [SerializeField] private Rigidbody rb;
 
     private void Awake()
     {
@@ -50,6 +51,8 @@ public class ReturnDroppedObject : MonoBehaviour
     IEnumerator ReturnToSpawn()
     {
         yield return new WaitForSeconds(timeToReturn);
+        rb.linearVelocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
         transform.position = intialPosition;
         transform.rotation = intialRotation;
     }
