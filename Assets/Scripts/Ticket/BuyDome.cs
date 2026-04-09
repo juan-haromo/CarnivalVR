@@ -8,6 +8,7 @@ public class BuyDome : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] Transform dome;
+    [SerializeField] Collider domeCollider;
     [SerializeField] Transform productSpawnPoint;
     [SerializeField] GameObjectPool productPool;
     [SerializeField] private int domeCost = 5;
@@ -62,6 +63,7 @@ public class BuyDome : MonoBehaviour
 
     IEnumerator OpenDome()
     {
+        domeCollider.enabled = false;
         while (0.01f < Vector3.Distance(dome.position, openPoint.position))
         {
             dome.position = Vector3.MoveTowards(dome.position, openPoint.position, Time.deltaTime * openCloseSpeed);
@@ -70,14 +72,17 @@ public class BuyDome : MonoBehaviour
         productInstance.SetInteractable(true);
     }
 
+    [SerializeField] float closeWaitTime = 5;
     IEnumerator CloseDone()
     {
+        yield return new WaitForSeconds(closeWaitTime);
         while(0.01f < Vector3.Distance( dome.position, closePoint.position))
         {
             dome.position = Vector3.MoveTowards(dome.position, closePoint.position, Time.deltaTime * openCloseSpeed);
             yield return new WaitForEndOfFrame();
         }
         yield return new WaitForSeconds(2);
+        domeCollider.enabled = true;
         GenerateProduct();
         hasProduct = true;
     }
