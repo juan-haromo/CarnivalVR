@@ -1,12 +1,16 @@
+using Unity.Android.Gradle.Manifest;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit.Locomotion;
+using UnityEngine.XR.Interaction.Toolkit.Locomotion.Gravity;
 
 public class PlayerAreaRestriction : MonoBehaviour, IRestrictedObject
 {
     [SerializeField] Fade fade;
     [SerializeField] private CharacterController controller;
     [SerializeField] private SoundPlayer restrictedAreaSound;
+    [SerializeField] private GravityProvider gravityProvider;
 
-    void Awake()
+    void Start()
     {
         ActiveMovement(false);
         fade.FadeOut(() => ActiveMovement(true));    
@@ -32,7 +36,8 @@ public class PlayerAreaRestriction : MonoBehaviour, IRestrictedObject
 
     void ActiveMovement(bool active)
     {
-        controller.attachedRigidbody.useGravity = active;
+        gravityProvider.useGravity = active; 
+        //controller.attachedRigidbody.useGravity = active;
         controller.enabled = active;
     }
 }

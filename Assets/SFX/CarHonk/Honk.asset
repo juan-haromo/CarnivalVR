@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-8282510483062472644
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Honk-5_{-8282510483062472644}
+  m_AudioClip: {fileID: 8300000, guid: bc4dacd40d52fd74794ee2f2ed517122, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-6485208264484104290
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Honk-4_{-6485208264484104290}
+  m_AudioClip: {fileID: 8300000, guid: 9dc35994636aa4644856b082dd99c2ed, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-4329624250480414281
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Honk-9_{-4329624250480414281}
+  m_AudioClip: {fileID: 8300000, guid: 01f5d5e9958994046803b3cf0e27f9e1, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1539563492975504895
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Honk-3_{-1539563492975504895}
+  m_AudioClip: {fileID: 8300000, guid: 566d6ad051e19aa4286fb4b091934249, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1203213888767121952
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Honk-2_{-1203213888767121952}
+  m_AudioClip: {fileID: 8300000, guid: 696f4083d7c40f7419169d242c468a2d, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &39333886107356472
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Honk-10_{39333886107356472}
+  m_AudioClip: {fileID: 8300000, guid: ddca9b03f6c45f14eb1cf8816f684fd1, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &4664220217080559345
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Honk-7_{4664220217080559345}
+  m_AudioClip: {fileID: 8300000, guid: cb496eae2614a694e9bac810eef97837, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &5982298133219213590
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Honk-8_{5982298133219213590}
+  m_AudioClip: {fileID: 8300000, guid: 43325aae9fff9004d8953adc09d99c47, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Honk
+  m_Volume: 0
+  m_Pitch: 0
+  m_AutomaticTriggerTime: 0
+  m_LoopCount: 2
+  m_VolumeRandomizationRange: {x: -4, y: 4}
+  m_PitchRandomizationRange: {x: 0, y: 0}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: 8779951580461736409}
+  - {fileID: -1203213888767121952}
+  - {fileID: -1539563492975504895}
+  - {fileID: -6485208264484104290}
+  - {fileID: -8282510483062472644}
+  - {fileID: 8888588984978326932}
+  - {fileID: 4664220217080559345}
+  - {fileID: 5982298133219213590}
+  - {fileID: -4329624250480414281}
+  - {fileID: 39333886107356472}
+  m_AvoidRepeatingLast: 2
+  m_PlaybackMode: 2
+  m_TriggerMode: 1
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 1
+  m_VolumeRandomizationEnabled: 1
+  m_PitchRandomizationEnabled: 0
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0
+--- !u!1233149941 &8779951580461736409
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Honk-1_{8779951580461736409}
+  m_AudioClip: {fileID: 8300000, guid: ff657e2558bf7cd439fbcfb532529681, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &8888588984978326932
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Honk-6_{8888588984978326932}
+  m_AudioClip: {fileID: 8300000, guid: c99ebf2c511ffac42bc5a075d150f6a1, type: 3}
+  m_Volume: 0
+  m_Enabled: 1

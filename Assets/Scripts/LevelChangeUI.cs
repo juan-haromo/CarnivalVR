@@ -7,6 +7,9 @@ public class LevelChangeUI : MonoBehaviour
 {
     [SerializeField] Transform ui;
     [SerializeField] private InputActionReference openUIAction;
+    [SerializeField] private Transform key;
+    [SerializeField] private Rigidbody keyRb;
+    [SerializeField] private Transform keyStartPosition;
 
     void Start()
     {
@@ -25,5 +28,10 @@ public class LevelChangeUI : MonoBehaviour
     private void ToggleUI(InputAction.CallbackContext context)
     {
         ui.gameObject.SetActive(!ui.gameObject.activeSelf);
+        key.SetParent(keyStartPosition);
+        key.SetPositionAndRotation(keyStartPosition.position, keyStartPosition.rotation);
+        key.gameObject.SetActive(ui.gameObject.activeSelf);
+        keyRb.linearVelocity = Vector3.zero;
+        keyRb.angularVelocity = Vector3.zero;
     }
 }

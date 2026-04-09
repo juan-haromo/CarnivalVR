@@ -2052,6 +2052,18 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1035961325}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 463479631}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
         m_MethodName: ChangeScene
@@ -2112,7 +2124,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 6418180475301049370, guid: 2db8d5525377d5e42b7221c56d21dccf, type: 2}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2603,11 +2615,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable
---- !u!4 &1234544230 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5620437929258940724, guid: 540119331e152f94581132f45e6238c1, type: 3}
-  m_PrefabInstance: {fileID: 4185005869416406507}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1243805764
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3688,17 +3695,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a532a7dec4041144afd3cae46a96c79, type: 3}
---- !u!114 &1807096079 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6320561547025340264, guid: 540119331e152f94581132f45e6238c1, type: 3}
-  m_PrefabInstance: {fileID: 4185005869416406507}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3d75f716dcae004995dc663a9b1f39e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SoundPlayer
 --- !u!1 &1814126253
 GameObject:
   m_ObjectHideFlags: 0
@@ -3939,6 +3935,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!54 &1926240164 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 7554674994470660859, guid: 572b00379ceadce4495f472479fc333d, type: 3}
+  m_PrefabInstance: {fileID: 8132313898365923562}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2042272169
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9077,18 +9078,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4365702842488385233, guid: 540119331e152f94581132f45e6238c1, type: 3}
-      propertyPath: restrictedAreaSound
-      value: 
-      objectReference: {fileID: 1807096079}
-    - target: {fileID: 7328915271236470458, guid: 540119331e152f94581132f45e6238c1, type: 3}
-      propertyPath: m_AttachTransform
-      value: 
-      objectReference: {fileID: 1234544230}
-    - target: {fileID: 7328915271236470458, guid: 540119331e152f94581132f45e6238c1, type: 3}
-      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Carnival
-      objectReference: {fileID: 0}
     - target: {fileID: 9138495780858034236, guid: 540119331e152f94581132f45e6238c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 39.3
@@ -14276,6 +14265,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7203648875994536458, guid: 572b00379ceadce4495f472479fc333d, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 1926240164}
+    - target: {fileID: 7336062111123769082, guid: 572b00379ceadce4495f472479fc333d, type: 3}
+      propertyPath: m_MovementType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7336062111123769082, guid: 572b00379ceadce4495f472479fc333d, type: 3}
+      propertyPath: m_ThrowOnDetach
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7336062111123769082, guid: 572b00379ceadce4495f472479fc333d, type: 3}
+      propertyPath: m_Colliders.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7336062111123769082, guid: 572b00379ceadce4495f472479fc333d, type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -14288,6 +14293,18 @@ PrefabInstance:
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1035961326}
+    - target: {fileID: 8454330425250684699, guid: 572b00379ceadce4495f472479fc333d, type: 3}
+      propertyPath: m_Size.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8454330425250684699, guid: 572b00379ceadce4495f472479fc333d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8454330425250684699, guid: 572b00379ceadce4495f472479fc333d, type: 3}
+      propertyPath: m_Size.z
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
