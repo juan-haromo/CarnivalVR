@@ -45,6 +45,10 @@ public class TowerOfCans : MonoBehaviour
     {
         ticketMachine.DispenseTicket(ticketTable.GetTicketAmountForScore(pointSystem.DroppedCans));
         isPlaying = false;
+        foreach(Rigidbody r in ballsinstances)
+        {
+            r.gameObject.SetActive(false);
+        }
     }
     
     public void RestartGame()
