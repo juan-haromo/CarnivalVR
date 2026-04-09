@@ -29,6 +29,7 @@ public class Basketball : MonoBehaviour
         score = 0;
         lblCurrentScore.text = score.ToString("D2");
         isGamePlaying = false;
+        UpdateBalls(false);
     }
 
     void OnTriggerEnter(Collider other)
@@ -68,7 +69,7 @@ public class Basketball : MonoBehaviour
     
     IEnumerator Timer()
     {
-        for(int i = maxTime; 0<i; i--)
+        for(int i = maxTime; 0<=i; i--)
         {
             yield return new WaitForSeconds(1);
             timer.text = i.ToString("D2");
