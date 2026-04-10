@@ -13,6 +13,7 @@ public class PlayerScaler : MonoBehaviour
     [SerializeField] private SoundPlayer soundPlayer;
     [SerializeField] private SoundContainer growSound;
     [SerializeField] private SoundContainer shrinkSound;
+    [SerializeField] private Fade fade;
 
     void Awake()
     {
@@ -43,6 +44,17 @@ public class PlayerScaler : MonoBehaviour
     {
         Debug.Log(scale);
         transform.localScale = Vector3.one * scale;
+    }
+
+    public void FadeResize()
+    {
+        fade.FadeIn(FadeOutResize);
+    }
+
+    void FadeOutResize()
+    {
+        Resize(true);
+        fade.FadeOut();
     }
 
    

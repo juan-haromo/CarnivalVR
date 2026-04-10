@@ -2551,6 +2551,7 @@ MonoBehaviour:
   soundPlayer: {fileID: 9069652283920847941}
   growSound: {fileID: 11400000, guid: 251a0a07963f7004286851c7ddbb55e8, type: 2}
   shrinkSound: {fileID: 11400000, guid: 0e77bec11dbd2794b83d686c53f1dfc1, type: 2}
+  fade: {fileID: 63852382937704420}
 --- !u!114 &9069652283920847941
 MonoBehaviour:
   m_ObjectHideFlags: 0
