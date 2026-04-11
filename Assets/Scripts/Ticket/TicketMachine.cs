@@ -21,6 +21,7 @@ public class TicketMachine : MonoBehaviour
     [SerializeField] Transform grabDisplay;
     [SerializeField] TextMeshProUGUI lblTicketAmount;
     private int totalTickets;
+    Coroutine grabTicketsRoutine;
 
     Stack<PooledObject> activeTickets;
 
@@ -39,6 +40,17 @@ public class TicketMachine : MonoBehaviour
 
     public void DispenseTicket(int ticketCount = 1)
     {
+        if(grabTicketsRoutine != null)
+        {
+            StopCoroutine(grabTicketsRoutine);
+            TicketManager.Instance.AddTickets(activeTickets.Count);        
+            while (activeTickets.Count > 0)
+            {
+                activeTickets.Pop().ReturnToPool();
+            }
+            totalTickets = 0;
+            UpdateTicketAmountDisplay();
+        }
         SetInteractable(true);
         Mathf.Max(0, ticketCount);
         soundPlayer.PlaySound(dispenseTicketSound);
@@ -64,7 +76,7 @@ public class TicketMachine : MonoBehaviour
     public void GrabTickets()
     {
         SetInteractable(false);
-        StartCoroutine(GrabTicketsCoroutine());
+        grabTicketsRoutine = StartCoroutine(GrabTicketsCoroutine());
     }
 
     IEnumerator GrabTicketsCoroutine()
