@@ -435,9 +435,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- Juan Haro
-
-    -'
+  m_text: "- Juan Haro\n- Santiago Casta\xF1eda"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c1f1cd079d8a5e04d9b32c834fb92a54, type: 2}
   m_sharedMaterial: {fileID: -1232399803053426276, guid: c1f1cd079d8a5e04d9b32c834fb92a54, type: 2}
@@ -3565,7 +3563,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -550}
-  m_SizeDelta: {x: -100, y: 200}
+  m_SizeDelta: {x: -100, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1243795498
 MonoBehaviour:
@@ -4318,9 +4316,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '-
-
-'
+  m_text: "- Margarita \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c1f1cd079d8a5e04d9b32c834fb92a54, type: 2}
   m_sharedMaterial: {fileID: -1232399803053426276, guid: c1f1cd079d8a5e04d9b32c834fb92a54, type: 2}
@@ -4884,9 +4880,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '-
-
-'
+  m_text: "- RamsesMM \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c1f1cd079d8a5e04d9b32c834fb92a54, type: 2}
   m_sharedMaterial: {fileID: -1232399803053426276, guid: c1f1cd079d8a5e04d9b32c834fb92a54, type: 2}
