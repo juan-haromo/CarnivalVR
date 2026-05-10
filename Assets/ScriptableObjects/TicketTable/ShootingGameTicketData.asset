@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TicketTableData
   GameName: "\xA1Dispara a las botellas!"
   entries:
-  - ticketAmount: 100
-    scoreThreshold: 35
   - ticketAmount: 50
-    scoreThreshold: 30
+    scoreThreshold: 35
   - ticketAmount: 40
-    scoreThreshold: 25
+    scoreThreshold: 30
   - ticketAmount: 30
-    scoreThreshold: 20
+    scoreThreshold: 25
   - ticketAmount: 20
-    scoreThreshold: 15
+    scoreThreshold: 20
   - ticketAmount: 10
+    scoreThreshold: 15
+  - ticketAmount: 5
     scoreThreshold: 10
   - ticketAmount: 1
     scoreThreshold: 5
